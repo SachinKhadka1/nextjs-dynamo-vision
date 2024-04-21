@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { twMerge } from "tailwind-merge";
+import Drawer from "@/components/Drawer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,13 +19,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-screen">
-      <body className={twMerge(inter.className, "min-h-screen flex flex-col")}>
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <main className="flex-1 overflow-auto p-4">{children}</main>
-          <Footer />
-        </div>
+    <html lang="en" className="h-[100vh]">
+      <body
+        className={twMerge(
+          inter.className,
+          "flex flex-col min-h-screen drawer drawer-end"
+        )}
+      >
+        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+        <Navbar />
+        <main className="flex flex-col">{children}</main>
+        <Footer />
+        <Drawer />
       </body>
     </html>
   );
