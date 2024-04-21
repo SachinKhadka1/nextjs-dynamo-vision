@@ -3,7 +3,7 @@ import Link from "next/link";
 import Logo from "../assets/dynamo_vision_logo.jpg";
 const Navbar = () => {
   return (
-    <div className="h-[70px] bg-[#1b3425] flex flex-row justify-between items-center px-5">
+    <nav className="bg-[#1b3425] flex flex-row justify-between items-center px-5 py-5">
       <Link href="/">
         <Image src={Logo} alt="Logo" width={320} height={40} />
       </Link>
@@ -12,7 +12,7 @@ const Navbar = () => {
         <Link href="/packages">Packages</Link>
         <Link href="/cart">Cart</Link>
       </div>
-    </div>
+    </nav>
   );
 };
 
