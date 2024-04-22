@@ -10,7 +10,7 @@ const Navbar = () => {
       </Link>
       <div className="flex flex-row gap-5 text-white">
         <Link href="/portfolio">Portfolio</Link>
-        <Link href="/packages">Packages</Link>
+        {/* <Link href="/packages">Packages</Link> */}
       </div>
     </nav>
   );

@@ -1,45 +1,50 @@
 "use client";
-
+import Portait from "../public/gallery/potrait5_2c.jpg";
+import Background from "../public/BG3.jpg";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import Timeline from "@/components/Timeline";
 
 const Page = () => {
-  // const refs = useRef<(HTMLDivElement | null)[]>(new Array(4).fill(null));
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     refs.current.forEach((ref, index) => {
-  //       if (!ref) return;
-  //       const speed = 0.2 * (index + 1); // Increasing speed factor by the index
-  //       const offset = -1 * window.scrollY * speed; // Calculating offset
-  //       ref.style.transform = `translateY(${offset}px)`; // Applying the transform
-  //     });
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
   return (
     <>
-      {[1, 2, 3, 4].map((num, index) => (
-        <div
-          key={num}
-          // ref={(el) => {
-          //   refs.current[index] = el; // Correctly assigning ref
-          // }}
-          className="relative h-screen overflow-hidden" // Ensure full screen height and manage overflow
-        >
-          <Image
-            src={`/BG${num}.jpg`}
-            alt={`Background Image ${num}`}
-            width={1}
-            height={1}
-            priority={index === 0}
-            layout="responsive" // Ensuring responsiveness
-          />
-        </div>
-      ))}
+      <div className="relative h-screen overflow-hidden">
+        <Image
+          src={`/BG1.jpg`}
+          alt={`Background Image 1`}
+          width={1}
+          height={1}
+          layout="responsive"
+        />
+        <Timeline />
+      </div>
+      <div className="relative h-screen overflow-hidden">
+        <Image
+          src={`/BG2.jpg`}
+          alt={`Background Image 2`}
+          width={1}
+          height={1}
+          layout="responsive"
+        />
+      </div>
+      <div className="relative h-screen overflow-hidden mt-[-25px]">
+        <Image
+          src={Background}
+          alt={`Background Image 3`}
+          width={1}
+          height={1}
+          layout="responsive"
+        />
+      </div>
+
+      <div className="relative h-screen overflow-hidden">
+        <Image
+          src={`/BG4.jpg`}
+          alt={`Background Image 4`}
+          width={1}
+          height={1}
+          layout="responsive"
+        />
+      </div>
     </>
   );
 };
