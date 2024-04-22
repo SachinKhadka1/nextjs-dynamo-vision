@@ -1,5 +1,8 @@
 "use client";
 
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+
 import PhotoAlbum from "react-photo-album";
 
 const photos = [
@@ -81,7 +84,14 @@ const photos = [
 const page = () => {
   return (
     <div className="p-10">
-      <PhotoAlbum layout="rows" photos={photos} />
+      {/* <PhotoAlbum layout="rows" photos={photos} /> */}
+      <ImageList variant="masonry" cols={3} gap={8}>
+        {photos.map((item) => (
+          <ImageListItem key={item.src}>
+            <img srcSet={`${item.src}`} src={`${item.src}`} loading="lazy" />
+          </ImageListItem>
+        ))}
+      </ImageList>
     </div>
   );
 };

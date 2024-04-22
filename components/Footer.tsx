@@ -13,15 +13,29 @@ const Footer = () => {
       </div>
       <NewsletterInput />
       <div className="flex flex-row gap-5 mb-5">
-        <Link href="/">
+        <a
+          style={{ display: "table-cell" }}
+          href="https://www.instagram.com/sachin_khadak/"
+          target="_blank"
+        >
           <InstagramIcon className="h-8 w-8" />
-        </Link>
-        <Link href="/">
+        </a>
+
+        <a
+          style={{ display: "table-cell" }}
+          href="http://www.youtube.com/@sachin.khadka"
+          target="_blank"
+        >
           <YouTubeIcon className="h-8 w-8" />
-        </Link>
-        <Link href="/">
+        </a>
+
+        <a
+          style={{ display: "table-cell" }}
+          href="https://www.facebook.com/sachin.khadka.142"
+          target="_blank"
+        >
           <FacebookIcon className="h-8  w-8 " />
-        </Link>
+        </a>
       </div>
       <div className="mt-[-40px] text-xs">
         Copyright © {new Date().getFullYear()} - All right reserved by Sachin
