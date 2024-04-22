@@ -4,10 +4,10 @@ type timelineType = {
 };
 
 const timelineData: timelineType[] = [
-  { year: 5, description: "Hello hello" },
-  { year: 5, description: "Hello hello" },
-  { year: 5, description: "Hello hello" },
-  { year: 5, description: "Hello hello" },
+  { year: 2020, description: "Got My First Camera" },
+  { year: 2021, description: "Started Uploading Content" },
+  { year: 2022, description: "Started Job as Videographer" },
+  { year: 2023, description: "Freelancing Projects" },
 ];
 
 const TimelineItem = ({

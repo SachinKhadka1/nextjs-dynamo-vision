@@ -15,6 +15,7 @@ const Page = () => {
           height={1}
           layout="responsive"
         />
+
         <Timeline />
       </div>
       <div className="relative h-screen overflow-hidden">

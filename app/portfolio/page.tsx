@@ -54,7 +54,7 @@ const photos = [
   { src: "/gallery/potrait10.jpg", width: 250, height: 250 },
   { src: "/gallery/potrait11.jpg", width: 250, height: 250 },
   { src: "/gallery/potrait12_rc.jpg", width: 500, height: 500 },
-  { src: "/gallery/potrait13.jpg", width: 250, height: 250 },
+  // { src: "/gallery/potrait13.jpg", width: 250, height: 250 },
   { src: "/gallery/potrait14.jpg", width: 250, height: 250 },
   { src: "/gallery/potrait1_2c.jpg", width: 500, height: 250 },
   { src: "/gallery/potrait2_2r.jpg", width: 250, height: 500 },
@@ -77,8 +77,8 @@ const photos = [
   { src: "/gallery/wedding1.jpg", width: 250, height: 250 },
   { src: "/gallery/wedding2.jpg", width: 250, height: 250 },
   { src: "/gallery/wedding3_2c.jpg", width: 250, height: 500 },
-  { src: "/gallery/wedding4.jpg", width: 250, height: 250 },
-  { src: "/gallery/wedding5.jpg", width: 250, height: 250 },
+  // { src: "/gallery/wedding4.jpg", width: 250, height: 250 },
+  // { src: "/gallery/wedding5.jpg", width: 250, height: 250 },
 ];
 
 const page = () => {
